@@ -1,4 +1,4 @@
-katz_deli = [] #this is the empty array because when i first start there is no one
+katz_deli = ["harry", "ron", "hermoine"] #this is the empty array because when i first start there is no one
 
 def line(array) #take in a string
   if array.length == 0 #if that string is empty or charcters equal 0 the current line is empty
@@ -25,18 +25,15 @@ def take_a_number(array, name) #take in two variables
   return name, position #return name and the position i used return because it has to hold the name in the katz_deli array
 end
 
-take_a_number(katz_deli, "thor")
-take_a_number(katz_deli, "hulk")
-take_a_number(katz_deli, "iron man")
-take_a_number(katz_deli, "The King Black Panthe")
-
+take_a_number(katz_deli, "Thor")
+take_a_number(katz_deli, "Black Panther")
 
 
 def now_serving(array) #take in one argument array
   if array.length == 0 #if the length of the array is equal to 0 then there is no one in line
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{array.shift}." #if not i want to print the current person in the array
+    puts "Currently serving #{array.shift}." #if not i want to print the current person in the array i shift will only print the first name 
   end
 end
 
